@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Students</title>
+</head>
+<body style="background-color: blue;" >
+    <table class="table" style="height: 35rem;margin: 50px; width: 70%; position: fixed; margin-left: 20%; margin-top: 10%;); " >
+
+        <td style="color: brown; background-color: rgb(21, 245, 155); font-size: 30px; text-align: center;  ">Student_Names</td>
+        <td style="color:brown; background-color: rgb(21, 245, 155);font-size: 30px; text-align: center;  ">Students_Scores</td>
+        <td style="color: brown; background-color: rgb(21, 245, 155); font-size: 30px;text-align: center; ">Date</td>
+    </th>
+        {% for facilitator in facilitators %}
+        <th>
+            <tr>
+                <td style="color: rgb(34, 44, 54); background-color: rgb(247, 242, 242); text-align: center;"   >{{facilitator.lf_name}}</td>
+                <td style="color: rgb(36,44 ,54); background-color: rgb(242, 242, 242);text-align: center;"   >{{facilitator.students_scores}}</td>
+                <td style="color: rgb(4, 4, 4); background-color: rgb(242, 242, 242); text-align: center;"   >{{facilitator.date}}</td>
+            </tr>
+            {%endfor%}
+        </th>
+    </table>
+   
+</body>
+</html>
